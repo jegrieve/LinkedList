@@ -72,11 +72,6 @@ class LinkedList
     def insert_at(value, index)
         current_node = self.head
         current_index = 0
-        if index == 0
-            inserted_node = Node.new(value)
-            inserted_node.next_node = current_node
-        end
-
         while (current_node.next_node != nil)
             if current_index + 1 == index
                 inserted_node = Node.new(value)
@@ -104,9 +99,4 @@ class LinkedList
     end
 end
 
-a = LinkedList.new
-a.append("1")
-a.append("2")
-a.append("3")
-a.remove_at(3)
-puts a
+new_list = LinkedList.new
