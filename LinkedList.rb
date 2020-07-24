@@ -82,7 +82,7 @@ class LinkedList
         end 
     end
 
-    def remove_at(index) #not finished yet
+    def remove_at(index) 
         current_node = self.head
         current_index = 0
         while (current_node.next_node != nil)
@@ -100,3 +100,4 @@ class LinkedList
 end
 
 new_list = LinkedList.new
+
